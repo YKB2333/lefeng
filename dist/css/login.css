@@ -1,0 +1,124 @@
+#logo {
+  height: 100px;
+  background-color: #fbe1d3; }
+  #logo img {
+    margin: 12px 0 0 16px; }
+
+#reg {
+  height: 750px;
+  background: url("http://h5rsc.vipstatic.com/lefeng_pc/images/page/login-bk.jpg") no-repeat center -120px #fbe1d3; }
+  #reg .container {
+    position: relative; }
+  #reg form {
+    position: absolute;
+    height: 621px;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    width: 420px;
+    z-index: 5;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-box-shadow: #ccc 0px 0px 5px;
+    -moz-box-shadow: #ccc 0px 0px 5px;
+    box-shadow: #ccc 0px 0px 5px; }
+    #reg form .tip {
+      display: none;
+      color: #999; }
+    #reg form .loginTitle {
+      height: auto !important;
+      height: 40px;
+      min-height: 40px;
+      padding: 25px 60px 0 60px;
+      margin-bottom: 20px; }
+      #reg form .loginTitle span {
+        font-size: 24px;
+        font-weight: bolder; }
+      #reg form .loginTitle a {
+        float: right;
+        font-size: 14px;
+        font-weight: bold;
+        color: #02b1cb;
+        margin-top: 10px; }
+        #reg form .loginTitle a:hover {
+          text-decoration: underline; }
+    #reg form input {
+      width: 278px;
+      height: 33px;
+      border: 1px solid #ccc;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 33px\9;
+      color: #666;
+      padding: 0 10px;
+      outline: none;
+      background: #fff; }
+    #reg form .loginInput {
+      padding: 0 60px;
+      position: relative;
+      margin-top: 35px;
+      font-weight: 500;
+      line-height: 24px; }
+      #reg form .loginInput li {
+        width: 300px;
+        clear: both; }
+        #reg form .loginInput li .forg {
+          float: right;
+          color: #02b1cb; }
+        #reg form .loginInput li .yzm {
+          width: 125px;
+          margin-right: 5px; }
+        #reg form .loginInput li .shuaxin {
+          height: 40px;
+          width: 44px;
+          color: #a0a0a0;
+          text-decoration: underline;
+          display: inline-block;
+          margin-left: 4px;
+          vertical-align: top; }
+        #reg form .loginInput li .subBtn {
+          margin: 15px 0;
+          width: 300px;
+          height: 40px;
+          display: block;
+          background: url("http://h5rsc.vipstatic.com/lefeng_pc/images/page/login-icon5.jpg") 0 -262px no-repeat;
+          text-align: center;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 38px;
+          color: #fff;
+          word-spacing: 8px;
+          letter-spacing: 1px;
+          cursor: pointer;
+          border: none; }
+          #reg form .loginInput li .subBtn:hover {
+            opacity: .9; }
+    #reg form .hezuo {
+      border-top: 1px solid #eceae6;
+      margin: 20px 0 0 0;
+      padding: 30px 0 0 0;
+      height: auto !important;
+      height: 130px;
+      min-height: 130px; }
+      #reg form .hezuo span.par_9 {
+        width: 150px; }
+      #reg form .hezuo span {
+        line-height: 50px;
+        display: block;
+        float: left; }
+        #reg form .hezuo span a {
+          color: #999; }
+      #reg form .hezuo i {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle; }
+      #reg form .hezuo .par_9 i {
+        background: url("http://h5rsc.vipstatic.com/lefeng_pc/images/page/login-icon5.jpg") -303px bottom no-repeat;
+        width: 26px; }
+      #reg form .hezuo .par_3 i {
+        background: url("http://h5rsc.vipstatic.com/lefeng_pc/images/page/login-icon5.jpg") -120px bottom no-repeat; }
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,31 @@
+1.当某一元素需要滚轮滑动事件时会触发到window的滚轮事件?
+解决:当在元素内时禁止window滚动事件,移出时恢复
+	window.onmousewheel=function(){return false};  
+	但是这个只能禁止鼠标滚轮,上下键和拖动不能禁止
+
+2.location.search转码
+decodeURIComponent(location.search) 解码是关键，如果不解码有可能获取到的userid是一堆被编码过的字符串。
+
+3.jQuery中如何在父元素中增加新节点到指定位置
+	在js当中追加节点的方法是appendChild(节点元素)和insertBefor(节点元素，位置)，在jQuery中是
+	append 追加在父元素的最后一个子节点后面
+	prepend插入到父元素的第一个子节点前面
+	after在元素后面追加，同级
+	befor在元素的前面追加，同级
+
+4.获取页面元素距离浏览器工作区顶端的距离
+ 页面元素距离浏览器工作区顶端的距离  =  元素距离文档顶端偏移值  -   网页被卷起来的高度  
+即：
+ 页面元素距离浏览器工作区顶端的距离 =  DOM元素对象.offsetTop  - document.documentElement.scrollTop
+
+5.js 获取字符串中所有的数字和汉字
+var re1 = /(\d{1,3})+(?:\.\d+)?/g
+
+var re2 = /[\u4e00-\u9fa5]{2,}/g
+var str="11我22们33两个";
+var arr1 = str.match(re1);
+var arr2 = str.match(re2);
+arr1=11,22,33
+arr2=我,们,两个 
+
+6.PHP截取中文字符串乱码问题

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>购物车</title>
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/buyCart.css" />
+        <script type="text/javascript" src="../lib/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/buyCart.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="send">送货到<div class="location">广州<i></i>
+                    <ul class="didian">
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                    </ul>
+                </div>
+                </div>
+                
+                <ul class="fr">
+                    <li class="wallet"><a href="#">我的订单<i></i></a>
+                        <ul>
+                            <li><a href="#">我的钱包</a></li>
+                            <li class="nav_lt"><a href="#" class="lt">我的礼券</a></li>
+                        </ul>
+                    </li>
+                    <li class="fastNav">
+                        <a href="#" class="zhe">快速导航<i class="f_icon"></i></a>
+                        <div class="nav">
+                            <a href="#">帮助中心</a><a href="#">联系客服</a>
+                            <a href="#">商务活动</a>
+                            <div class="erweima"></div>
+                            <h4>惊喜码上来</h4>
+                        </div>
+                    </li>
+                    <li><a href="#">收藏乐蜂</a></li>
+                    <li class="nav_lt"><a href="#"><i class="phone"></i>手机乐蜂</a>
+                        <div class="nav">
+                            <img src="http://h5rsc.vipstatic.com/lefeng_pc/images/page/xz_icon_for_lf.jpg" alt="" />
+                            <i class="apple"></i><i class="android"></i><h4>客户端</h4>
+                        </div>
+                    </li>
+                </ul>
+                <span class="fr"><!-- 嗡,欢迎来到乐蜂,&nbsp;<a href="javascript:;" class="">登录</a>&nbsp;|&nbsp;<a href="#">退出登录</a>&nbsp; --></span>
+                
+            </div>
+        </header>
+        <div class="cart-top">
+            <div class="cart-main">
+                <div class="cart-logo">
+                    <a href="http://www.lefeng.com"></a>
+                </div>
+                <div class="cart-step step01">
+                </div>
+                <!--step01查看购物车 step02确认订单信息 step03成功提交订单-->
+            </div>
+        </div>
+        <div class="w1000" id="shopping_cart_contain">
+            <div class="container">
+                <!-- <div class="tit"><span>收货信息</span></div> -->
+                <!-- <div class="cart-x cf_payment" style="display: block;">
+                    <div class="tit"><span>支付方式</span>*推荐使用在线支付，更方便快捷</div>
+                    <input type="hidden" id="lf_usePurse" value="0">
+                    <!-- 是否使用钱包支付 直接使用在线支付-->
+                    <!-- <div class="cart2-zf cf_payment_type_part">
+                        <p>您还需支付<b class="cf_price_need">109</b>元，请选择：</p>
+                                <div class="box">
+                                <input id="bank" name="paymenttype" type="radio" value="164" class="radio" checked="checked"><font>在线支付</font>提交订单后选择<br>
+                            </div>
+                        </div> -->
+                <!-- </div> -->
+                <!-- <div class="cart-x cf_cart_info" style="display: block;"><div class="tit">
+                    <span>订单商品信息</span>
+                    </div>
+                    <div class="cart2-xi">
+                        <table>
+                            <tbody><tr>
+                                <th class="th01"><span>商品信息</span></th>
+                                <th class="th02">单价</th>
+                                <th class="th03">数量</th>
+                                <th class="th04">小计</th>
+                            </tr>
+                                                                        <tr>
+                                <td>
+                                    <strong>
+                                        <a href="http://product.lefeng.com/product/522536599373395.html" title="面膜小灯泡 所有肤质 美白 火棘焕白面贴膜20片" target="_blank">
+                                            <img width="58" height="74" src="http://a2.vimage1.com/upload/merchandise/pdcvis/600300/2018/0626/116/4f93df21-77bf-43b2-b51f-95e53003d563_5t.jpg">
+                                        </a>
+                                    </strong>
+                                    <p class="name"><a href="http://product.lefeng.com/product/522536599373395.html" title="面膜小灯泡 所有肤质 美白 火棘焕白面贴膜20片" target="_blank">面膜小灯泡 所有肤质 美白 火棘焕白面贴膜20片</a></p>
+                                </td>
+                                <td style="font-family: Arial;">¥ 109</td>
+                                <td>1</td>
+                                <td style="font-family: Arial;">¥ 109.0</td>
+                            </tr>
+                                </tbody></table>
+                                
+                        <p>
+                            <label class="cf_cart_shippingfee">运费：免运费</label>
+                            本订单金额： <span class="u-yen">¥</span>
+                            <strong class="u-price cf_ordertotal">109</strong>
+                        </p>
+                            <input type="hidden" id="lf_hasHaitao" value="1">
+                        <input type="hidden" id="lf_remainingTime" value="912">
+                        </div>
+                </div> -->
+                <!-- <div class="cart-but cf_result_info clearfix" style="">
+                    <div class="box-t">
+                        <ul>
+                            <li><label>收货信息：</label><span class="cf_addr_show">发.134*****216.北京市.宣武区.收货时间周一至周五</span></li>
+                            <li><label>支付方式：</label><span class="cf_payment_type">在线支付</span></li>
+                            <li class="buy">
+                                <label mars_sead="lpc_invoice">
+                                    <input id="fapiao" type="checkbox" value="" autocomplete="off">索要发票
+                                                                <i>
+                                        <font>1、发票类型：乐蜂目前只支持开具普通发票<br>
+                                        2、发票金额：不包含运费金额以及礼品卡支付、现金券和红包抵扣的金额；<br>
+                                        3、发票内容：<br>
+                                        1)交易单中乐蜂网发货的商品，由乐蜂开具发票，发票内容根据购买商品所属分类确定。<br>
+                                        2)交易单中非乐蜂网发货的商品，由商家开具发票，发票内容由商家决定。<br>
+                                        <a href="http://order.lefeng.com" target="_blank">更多信息</a></font>
+                                        </i>
+                                </label>
+                                <input type="hidden" id="lf_fapiaoType" value="">
+                                <input type="hidden" id="lf_fapiaoTitle" value="">
+                                <div class="tur-bly" style="display:none;">
+                                    <table class="cf_fapiao_table">
+                                        <tbody><tr id="fapiaoMethodEdit">
+                                            <td align="left" width="70px">开票方式:</td>
+                                            <td>
+                                                <label class="label-radio" for="radio-fapiaoPaper" style="display: none;">
+                                                    <input id="radio-fapiaoPaper" name="fapiaoMethod" type="radio" value="1" class="radio" checked="checked" autocomplete="off">纸质发票
+                                                </label>
+                                                <label class="label-radio" for="radio-fapiaoDigital">
+                                                    <input id="radio-fapiaoDigital" name="fapiaoMethod" type="radio" value="2" class="radio" autocomplete="off">电子发票
+                                                    <a href="http://www.lefeng.com/notice/384.html" target="_blank" style="position: absolute;color: #3199c7;margin-left: 5px;">(什么是电子发票?)</a>
+                                                </label>
+                                        </td></tr>
+                                        <tr id="fapiaoEdit">
+                                            <td align="left" valign="baseline" width="70px">开票抬头:</td>
+                                            <td>
+                                                <label class="label-radio" for="radio-fapiaoPerson">
+                                                    <input id="radio-fapiaoPerson" name="fapiaoType" type="radio" value="1" class="radio" checked="checked" autocomplete="off">个人&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </label>
+                                                <label class="label-radio" for="radio-fapiaoCompany">
+                                                    <input id="radio-fapiaoCompany" name="fapiaoType" type="radio" value="2" class="radio" autocomplete="off">公司
+                                                </label>
+                                                <div>
+                                                    <input id="fapiaoCompany" type="text" value="" class="text" autocomplete="off" maxlength="32" placeholder="公司名称">
+                                                    <div id="fapiaoNaShuiRen">
+                                                        <input type="text" value="" class="text" autocomplete="off" maxlength="30" placeholder="纳税人识别号">
+                                                        <i class="icon-warn"></i>
+                                                        <ul class="panel">
+                                                            <li>1、请确保开票抬头、纳税人识别号或统一社会信用代码的准确性，开票成功后无法更改。</li>
+                                                            <li>2、自2017年7月1日起，增值税普通发票的开具不填写纳税人识别号或统一社会信用代码不得作为税收凭证.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <input id="fapiaoMobile" type="text" value="" class="text" autocomplete="off" maxlength="11" placeholder="收票人手机号码" style="display: inline-block;">
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr class="fapiaoConfirm" style="display:none">
+                                            <td align="left" width="70px">发票方式:</td>
+                                            <td id="fapiaoConfirmMethod">纸质发票</td>
+                                        </tr>
+                                        <tr class="fapiaoConfirm">
+                                            <td align="left" width="70px">发票抬头:</td>
+                                            <td id="fapiaoConfirmTitle">个人</td>
+                                        </tr>
+                                        <tr class="fapiaoConfirm" style="display: none">
+                                            <td align="left" width="80px">纳税人识别号:</td>
+                                            <td id="naSuiRenConfirm"></td>
+                                        </tr>
+                                        <tr class="fapiaoConfirm">
+                                            <td><a class="xg cf_fapiao_edit" href="#">修改</a></td>
+                                            <td><a class="xg cf_fapiao_cancel" href="#">取消</a></td>
+                                        </tr>
+                                    </tbody></table>
+                                    <ul class="invoice-tip">
+                                        <li>1、电子发票开具时间为商品出仓后2-7个工作日，与纸质发票具备同等法律效力，可作为报销、售后服务凭证。</li>
+                                        <li>2、乐蜂上海暂不支持开具纸质发票</li>
+                                    </ul>
+                                    <a class="qd cf_fapiao_save" href="#">保存发票信息</a>
+                                </div>
+
+                                <p class="cf_timeout_text">请在 <b class="cf_left_min">07分09秒</b> 内提交订单</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-r">
+                        <ul>
+                            <li><label class="fl">商品金额</label><span class="fr"> <span class="u-yen">¥</span><strong class="u-price cf_total_amount">109</strong> </span></li>
+                            <li><label class="fl">乐蜂发货，运费</label><span class="fr"> <span class="u-yen">¥</span><strong class="u-price cf_shipping_fee">0</strong> </span></li>
+                            <li><label class="fl">活动优惠</label><span class="fr"> <span class="u-yen">-¥</span><strong class="u-price cf_active_coupon">0</strong> </span></li>
+                            <li><label class="fl">卡券优惠</label><span class="fr"> <span class="u-yen">-¥</span><strong class="u-price cf_coupon">0</strong> </span></li>
+                            <li class="cf_yue_li" style="display: none;"><label class="fl">钱包支付</label><span class="fr"> <span class="u-yen">-¥</span><strong class="u-price cf_yue">0</strong> </span></li>
+                            <li class="ov-pre"><label class="fl">待支付</label><span class="fr"><span class="u-yen">¥</span><strong class="u-price cf_pay_amount">109</strong> </span></li>
+                            <li>
+                                <div class="card-inf cf_input_idcard_tip" style="display: none;">
+                                    <i></i>
+                                    <div class="set-card-information"><span></span>请先<a href="#" class="set-pwd cf_input_idcard">填写身份证信息</a></div>
+                                </div>
+                                <input name="" type="button" value="提交订单" class="pre cf_create_order">
+                            </li>
+                            <li class="note cf_fapiao_need" style="display: none;">亲，您还没有点击确认发票</li>
+                        </ul>
+                    <span class="pollens-count" title="花粉可在乐蜂APP抵现使用哦" style="position: absolute; bottom: 17px; right: 40px; font-size: 14px; ">可获得 <b style=" color: red; ">54个</b>花粉</span><span class="pollens-count" title="花粉可在乐蜂APP抵现使用哦" style="position: absolute; bottom: 17px; right: 40px; font-size: 14px; ">可获得 <b style=" color: red; ">54个</b>花粉</span></div>
+                </div> -->
+                <!-- <div class="cart4-no" style="display:block">
+                    <div class="fl"></div>
+                    <div class="fr">
+                        <h1>您的购物车里没有商品，请先去挑选心爱的商品吧！</h1>
+                        <div class="lia">您可以<a href="http://www.lefeng.com">返回首页</a>挑选喜欢的商品，或者
+                        </div>
+                        <div class="lib">
+                            <input name="" id="cart-search-submit" type="button" class="button">
+                            <input name="" autocomplete="off" id="search-cart" type="text" class="text">
+                            <div id="cartAuto" class="cart-auto" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="cart-t">
+                    <i></i>请在<b id="countDown">18分32秒</b> 内提交订单，下单后您另有30分钟的支付时间。
+                    <span id="testDJS"></span>
+                </div> -->
+               <!--  <div class="cart-x">
+                   <div class="tit" id="cart_list_head">
+                       <table>
+                           <tbody><tr>
+                               <th class="td01">商品信息</th>
+                               <th class="td02">单价</th>
+                               <th class="td03">数量</th>
+                               <th class="td04">小计</th>
+                               <th class="td05">操作</th>
+                           </tr>
+                       </tbody></table>
+                   </div>
+                   <div id="cart_list_temp"><div class="list"><div class="table-box-tip"><div class="list-orders" id="0_0"></div></div><table><tbody><tr size_id="534320981049673" cart_id="53067878"><td class="td01"><div class="pic"><a href="http://product.lefeng.com/product/534320981012809.html" target="_blank"><img width="58" height="74" alt="" src="http://a2.vimage1.com/upload/merchandise/pdcvis/2018/09/10/49/7da77c5e-3c0a-48b2-bf9b-6f7ea4f29689_5t.jpg"></a><div class="max-pic" style="display:none;"><div class="max-pic-l"><span class="arrow-out">◆</span><span class="arrow">◆</span></div><div class="max-pic-t"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/2018/09/10/49/7da77c5e-3c0a-48b2-bf9b-6f7ea4f29689_5t.jpg" alt="" width="184" height="234"></div></div></div><div class="fr"><div class="name"><a title="" href="http://product.lefeng.com/product/534320981012809.html" target="_blank">古驰GUCCI花之舞系列香水明星之选(古驰绚丽栀子香型女性淡香水5ml*2+古驰花之舞淡香水5ml*2)</a></div><div class="size">规格:均码</div></div></td><td class="td02"><span class="m-price"><span class="u-yen">¥</span><strong class="u-price">399</strong></span><del class="mar-price"><span class="u-yen">¥</span><span class="u-price">570</span></del></td><td class="td03"><div class="quantity"><span class="l-no">-</span><a href="javascript:;" class="l-y" action="minus">-</a><input size_id="534320981049673" buy_num_min="1" buy_num_max="30" name="" value="1" type="text" class="tip"><span class="r-no">+</span><a href="javascript:;" action="add" class="r-y">+</a><div class="cart-error"></div></div></td><td class="td04"><span class="m-price"><span class="u-yen">¥</span><strong class="u-price">399.0</strong></span></td><td class="td05"><a href="javascript:;" class="del" value="534320981049673">删除</a><div class="cart-error"></div></td></tr></tbody></table></div></div>
+                   
+                   <div class="orders" id="shopping_cart_active"><p><span class="u-m">运费</span>本单已免运费</p></div>
+                </div> -->
+                <!-- <div class="cart-j">
+                    <div class="sykj"><a href="javascript:void(0);" id="couponUpDown">使用卡券<i class="down" id="upDownLi"></i> </a>
+                        已成功使用<b>0</b>张卡券 <input type="button" style="display:none;" value="取消使用" id="cancelUse"></div>
+                    <div class="cart-m" style="display:none;" id="couponUpDownDiv">
+                        <div class="cart-m-t">
+                            <label>激活新卡劵:</label>
+                            <span>优惠券（含代金券）</span>
+                            <input id="couponSn" name="couponSn" type="text" class="num" value="请输入激活码">
+                            <input id="couponSnBtn" name="couponSnBtn" type="button" class="but" value="激活">
+                            <div class="cart-m-t-error" style="display:none;">您输入的激活码有误</div>
+                        </div>
+                        <img src="//h5rsc.vipstatic.com/lefeng_pc/images/page/cart-min3.png" style="visibility: hidden;position:absolute; top:0;left:0">
+                        <div class="cart-m-b">
+                            <div class="tit">
+                                <ul id="page_nav">
+                                    <li class="cur">全场券(<b>0</b>)</li>
+                                    <li>专场券(<b>0</b>)</li>
+                                </ul>
+                                <p>"专场券"和"全场券"不能同时使用。</p>
+                            </div>
+                            <div class="main">
+                                <p>注：多个专场可使用多张，同一个专场只可使用1张。</p>
+                                <div id="cycle">
+                                    <table id="book7_1" width="100%"><tbody><tr style=""><td colspan="5"><i></i>您还没有满足使用条件的卡券~</td></tr></tbody></table>
+                                    <table style="display:none" width="100%" id="book7_2"><tbody><tr style=""><td colspan="5"><i></i>您还没有满足使用条件的卡券~</td></tr></tbody></table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="cart-b">
+                        <ul id="amount_cart"><li><label class="fl">共<b>1</b>件商品  商品金额</label><span class="fr"> <span class="u-yen">¥</span><strong class="u-price">399</strong> </span></li></ul>
+                    </div>
+                    <div class="cart-b cart-bt">
+                        <ul id="totalPayPrice"><li class="ov-pre"><label class="fl">总金额</label><span class="fr"><span class="u-yen">¥</span><strong class="u-price">399</strong> </span></li></ul>
+                    </div>
+                    <div class="cart-js">
+                        <div class="fl"><a href="http://www.lefeng.com" mars_sead="lpc_xf_buy">继续购物</a><a href="#" mars_sead="lpc_xf_buy"></a></div>
+                        <div class="fr">
+                            <span id="cleanCart" style="display:none;"> 
+                                结算时间已过，购物车被清空了~重新
+                                <input name="" type="button" value="挑选商品" class="txsp">
+                            </span> 
+                            <input name="" type="button" value="立即结算" class="pre" id="settlement" mars_sead="lpc_xf_cart">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!--弹窗-->
+        <div class="cart-jscs" id="overTime" style="display:none;">
+         <i></i>
+         <div class="box">
+            <div class="tit">结算超时<span id="refreshCart"></span></div>
+            <p>结算超时，购物车已被清空~重新挑选商品</p>
+            <p><input name="" type="button" id="reSelectGoods" value="重新挑选商品" class="over"></p>
+         </div>
+        </div>
+        <!--删除-->
+        <div class="cart-jscs" id="delWindow" style="display:none;">
+         <i></i>
+         <div class="box">
+            <div class="tit">删除<span></span></div>
+            <p>删掉的商品可能被别人抢走哦~要删除吗？</p>
+            <div class="but"><input name="" type="button" id="delBtnShopping" value="删除" class="over"> <input name="" id="noRemoveShopping" type="button" value="先留着" class="hy"></div>
+         </div>
+        </div>
+        <div class="Cfooter">
+            <div class="container">
+                <div class="Cfooter-cr">
+                    <div class="Cfooter-cr-a"><a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/76.html">关于乐蜂</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/77.html">免责声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/78.html">隐私声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/79.html">版权声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/zhaopin.html">招聘信息</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/73.html">联系我们</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/helpCenter.html">帮助中心</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/80.html">友情链接</a> 
+                    </div> 
+                    <span>Copyright <b>©</b> 2008-2016 Lefeng.com All Rights Reserved.</span> 
+                    <span>天津品简电子商务有限公司</span> <a target="_blank" href="http://www.miibeian.gov.cn/?biid=7520">津ICP备15005555号-1</a>&nbsp;&nbsp;<img style="display: inline-block; width: 15px; height: 15px; padding-right: 2px;" original="http://h5rsc.vipstatic.com/lefeng_pc/images/beian.png" src="http://h5rsc.vipstatic.com/lefeng_pc/images/beian.png"><span>京公网安备11010502034938号</span> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/242.html">营业执照</a>
+                    <div class="Cfooter-cr-info"> 
+                        <span>公司全称：天津品简电子商务有限公司  </span> &nbsp; &nbsp; <span>  公司固话：400 000 1818   </span> &nbsp; &nbsp; <span>   公司地址：天津市武清区京津电子商务产业园宏瑞道18号</span> </div>
+                    <div class="Cfooter-cr-img"> 
+                        <a id="___szfw_logo___" class="cxwz" rel="nofollow" target="_blank" href="https://search.szfw.org/cert/l/CX20120918001688001713"></a> 
+                        <a class="kxwz" rel="nofollow" target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e15011931011457422bp2j000000&amp;ct=df&amp;a=1&amp;pa=0.1418370669707656"></a> 
+                        <a class="pjzxlm" rel="nofollow" target="_blank" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1074823632"></a> <a class="itrust" rel="nofollow" target="_blank" href="http://www.315online.com.cn/member/315130044.html">中国互联网信用评价中心</a> 
+                        <a href="http://www.lefeng.com/notice/84.html" target="_blank" rel="nofollow" class="xfwq"></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+"use strict";requirejs.config({paths:{jquery:"../lib/jquery-1.10.1.min",swiper:"../lib/swiper-4.3.3//dist/js/swiper",common:"common"},shim:{swiper:{dep:["jquery"]},common:{dep:["../lib/swiper-4.3.3//dist/js/swiper"]}}}),requirejs(["jquery","swiper","common"],function(i){});

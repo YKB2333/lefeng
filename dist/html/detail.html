@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>详情页</title>
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/details.css" />
+        <!-- <script type="text/javascript" src="../lib/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/details.js"></script> -->
+        <script type="text/javascript" src="../js/require.js" data-main="../js/details.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="send">送货到<div class="location">广州<i></i>
+                    <ul class="didian">
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li><a href="#">广州</a></li>
+                    </ul>
+                </div>
+                </div>
+                
+                <ul class="fr">
+                    <li class="wallet"><a href="#">我的订单<i></i></a>
+                        <ul>
+                            <li><a href="#">我的钱包</a></li>
+                            <li class="nav_lt"><a href="#" class="lt">我的礼券</a></li>
+                        </ul>
+                    </li>
+                    <li class="fastNav">
+                        <a href="#" class="zhe">快速导航<i class="f_icon"></i></a>
+                        <div class="nav">
+                            <a href="#">帮助中心</a><a href="#">联系客服</a>
+                            <a href="#">商务活动</a>
+                            <div class="erweima"></div>
+                            <h4>惊喜码上来</h4>
+                        </div>
+                    </li>
+                    <li><a href="#">收藏乐蜂</a></li>
+                    <li class="nav_lt"><a href="#"><i class="phone"></i>手机乐蜂</a>
+                        <div class="nav">
+                            <img src="http://h5rsc.vipstatic.com/lefeng_pc/images/page/xz_icon_for_lf.jpg" alt="" />
+                            <i class="apple"></i><i class="android"></i><h4>客户端</h4>
+                        </div>
+                    </li>
+                </ul>
+                <span class="fr">欢迎来到乐蜂,请&nbsp;<a href="./login.html">登录</a>&nbsp;|&nbsp;<a href="./register.html">免费注册</a>&nbsp;</span>
+                
+            </div>
+        </header>
+        <div class="chead-main">
+            <div class="container">
+                <div class="chead-logo">
+                    <a href="http://www.lefeng.com"></a>
+                </div>
+                <div class="fr chead-buycar">
+                    <span><span class="buycar_qty">0</span></span>
+                    <div class="shopping-list" style="display: none;">
+                        <div class="shopping-list-title">
+                            <strong>0</strong>
+                        </div>
+                        <div class="shopping-list-pro noshop" style="height: 30px;">您的购物车还没有商品，<br>赶紧去选购吧！</div>
+                        <div class="shopping-list-pro haveshop" style="display:none;">
+                            <i></i>
+                            <div class="shopping-list-bar" id="shopping_list_info">
+                                <!-- <dl>
+                                    <dt>
+                                        <a href="http://product.lefeng.com/product/492150574.html" target="_blank">
+                                            <img src="http://a2.vimage1.com/upload/merchandise/pdcvis/2018/12/12/20/4b417d55-95f4-4150-9fba-fccd592973b1_5t.jpg">
+                                        </a>
+                                    </dt>
+                                    <dd class="shopping-pro">
+                                        <a href="http://product.lefeng.com/product/492150574.html" target="_blank">复颜抗皱紧致滋润乳液110ml 滋润保湿 乳液</a>
+                                    </dd>
+                                    <dd class="shopping-price"><em>￥205</em>×1</dd>
+                                </dl> -->
+                            </div>
+                            <p>
+                                共<b id="totalProduct" class="countnum">0</b>件商品
+                            </p>
+                            <p>
+                                <span>共计：<b id="totalMoney" class="countprice"></b></span>
+                            </p>
+                            <a class="goshopping" href="./buyCart.html">去购物车结算</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr chead-search">
+                    <input class="search" type="search" placeholder="珀莱雅"/>
+                    <input class="searchBtn" type="button" value="搜索" />
+                    <p>
+                        热门:
+                        <a class="highlight" href="http://search.lefeng.com/search/showresult?keyword=%E7%8F%80%E8%8E%B1%E9%9B%85">珀莱雅</a>
+                        <a class="highlight" href="http://search.lefeng.com/search/showresult?keyword=%E6%AC%A7%E8%8E%B1%E9%9B%85%E8%91%A1%E8%90%84%E7%B1%BD">欧莱雅葡萄籽</a>
+                        <a class="highlight" href="http://search.lefeng.com/search/showresult?keyword=%E6%8A%A4%E8%82%A4%E5%A5%97%E8%A3%85">护肤套装</a>
+                        <a class="highlight" href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2">洁面</a>
+                        <a class="highlight" href="http://search.lefeng.com/search/showresult?keyword=%E5%8F%A3%E7%BA%A2">口红</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div id="downDrag">
+                    <h2 >商品分类<i></i></h2>
+                    <ul class="down" style="display:none;">
+                        <li>
+                            <strong><i class="hufu1"></i>护肤用品</strong>
+                            <p>
+                                <a href="#">面膜</a>
+                                <a href="#">防嗮隔离</a>
+                                <a href="#">护肤套装</a>
+                                <a href="#">洁面</a>
+                                <a href="#">面部护肤</a>
+                                <a href="#">眼部护理</a>
+                            </p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E8%86%9C" target="_blank">面膜 &gt;</a>
+                                        </strong>
+                                        <div class="float-list-cont">
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E8%B4%B4%E8%86%9C" target="_blank">面贴膜</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E5%85%8D%E6%B4%97%E9%9D%A2%E8%86%9C" target="_blank">免洗面膜</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E8%86%9C" target="_blank">眼膜</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E6%B3%A5%E8%86%9C" target="_blank">泥膜</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E6%B3%A1%E6%B3%A1%E9%9D%A2%E8%86%9C" target="_blank">泡泡面膜</a><a href="http://search.lefeng.com/search/showresult?keyword=%E9%BC%BB%E8%86%9C%E9%BC%BB%E8%B4%B4" target="_blank">鼻膜鼻贴</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E6%8A%A4%E8%82%A4%E5%A5%97%E8%A3%85" target="_blank">护肤套装 &gt;
+                                            </a>
+                                        </strong>
+                                        <div class="float-list-cont">
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E6%8A%A4%E8%82%A4%E5%A5%97%E8%A3%85" target="_blank">护肤套装</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E9%83%A8%E6%8A%A4%E8%82%A4" target="_blank">面部护肤 &gt;
+                                            </a>
+                                        </strong>
+                                        <div class="float-list-cont">
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E9%9C%9C" target="_blank">面霜</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E4%B9%B3%E6%B6%B2" target="_blank">乳液</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E7%88%BD%E8%82%A4%E6%B0%B4" target="_blank">爽肤水</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E7%B2%BE%E5%8D%8E" target="_blank">精华</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E5%96%B7%E9%9B%BE" target="_blank">喷雾</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E9%98%B2%E6%99%92%E9%9A%94%E7%A6%BB" target="_blank">防晒隔离 &gt; 
+                                            </a>
+                                        </strong>
+                                        <div class="float-list-cont">
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E9%98%B2%E6%99%92%E4%B9%B3" target="_blank">防晒乳</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E9%98%B2%E6%99%92%E5%96%B7%E9%9B%BE" target="_blank">防晒喷雾</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E9%9A%94%E7%A6%BB%E4%B9%B3" target="_blank">隔离乳</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2" target="_blank">洁面 &gt; 
+                                            </a>
+                                        </strong>
+                                        <div class="float-list-cont">
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2%E4%B9%B3" target="_blank">洁面乳</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2%E8%86%8F" target="_blank">洁面膏</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2%E7%9A%82" target="_blank">洁面皂</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E9%83%A8%E6%8A%A4%E7%90%86" target="_blank">眼部护理 &gt; 
+                                            </a>
+                                        </strong>
+                                        <div class="float-list-cont">
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E9%9C%9C" target="_blank">眼霜</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E8%86%9C" target="_blank">眼膜</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E9%83%A8%E7%B2%BE%E5%8D%8E" target="_blank">眼部精华</a>
+                                            <a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E9%83%A8%E6%8A%A4%E7%90%86%E5%A5%97%E8%A3%85" target="_blank">眼部护理套装</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <strong><i class="hufu2"></i>彩妆用品</strong>
+                            <p>
+                                <a href="#">底妆</a>
+                                <a href="#">眼妆</a>
+                                <a href="#">唇妆</a>
+                                <a href="#">卸妆</a>
+                                <a href="#">美甲</a>
+                                <a href="#">彩妆套装</a>
+                            </p>
+                        </li>
+                        <li>
+                            <strong><i class="hufu3"></i>美容工具</strong>
+                            <p>
+                                <a href="#">美容工具</a>
+                                <a href="#">美妆工具</a>
+                                <a href="#">美发工具</a>
+                                <a href="#">美甲工具</a>
+                                <a href="#">洁面工具</a>
+                                <a href="#">化妆工具</a>
+                            </p>
+                        </li>
+                        <li>
+                            <strong><i class="hufu4"></i>护肤用品</strong>
+                            <p>
+                                <a href="#">面膜</a>
+                                <a href="#">防嗮隔离</a>
+                                <a href="#">护肤套装</a>
+                                <a href="#">洁面</a>
+                                <a href="#">面部护肤</a>
+                                <a href="#">眼部护理</a>
+                            </p>
+                        </li>
+                        <li>
+                            <strong><i class="hufu5"></i>彩妆用品</strong>
+                            <p>
+                                <a href="#">底妆</a>
+                                <a href="#">眼妆</a>
+                                <a href="#">唇妆</a>
+                                <a href="#">卸妆</a>
+                                <a href="#">美甲</a>
+                                <a href="#">彩妆套装</a>
+                            </p>
+                        </li>
+                        <li class="mb">
+                            <a class="more-btn" target="_blank" href="http://list.lefeng.com">查看全部分类 &gt;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="Cnav-one">
+                    <a href="../index.html" mars_sead="lpc_dh_xstm">首页</a>
+                    <a href="http://brand.lefeng.com/showGoodsList/800074390.html?f=1" target="_blank" mars_sead="lpc_dh_mzsc">蜂购全球</a>
+                </h3>
+                <div class="Cnav-right fr">
+                    <a href="http://www.lefeng.com/notice/205.html" target="_blank" class="Cnav-right-icon-1"></a>
+                    <a href="http://www.lefeng.com/notice/205.html" target="_blank" class="Cnav-right-icon-2"></a>
+                    <a href="http://www.lefeng.com/notice/205.html" target="_blank" class="Cnav-right-icon-3"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="path">
+            <div class="container">
+                <b><a href="../index.html" target="_blank">乐蜂网首页</a> <i class="lf-icon lf-icon-right"></i></b>
+                <div class="magnifier" id="magnifier1">
+                    <div class="magnifier-container">
+                        <div class="images-cover"></div>
+                        <!--当前图片显示容器-->
+                        <div class="move-view"></div>
+                        <!--跟随鼠标移动的盒子-->
+                    </div>
+                    
+                    <div class="magnifier-view"></div>
+                    <!--经过放大的图片显示容器-->
+                </div>
+                <!-- <b><a href="javascript:;" target="_blank">百雀羚热卖专场专场</a> <i class="lf-icon lf-icon-right"></i></b>  百雀羚百雀羚【控油去尘垢】三生花控油清肌净肤泥膜50g 补水面膜    --> 
+            </div>
+        </div>
+        <div class="commodity-t-composite">
+            <div class="container">
+                <div class="bigProduct-c" data-sid="510849978013460" data-pid="510849977988884" data-haitao="0" data-min="1" data-max="30" data-page="detail" data-anti-brushed="0">
+                    <dl>
+                        <dd class="dity-brand-time">
+                            <input type="hidden" id="dity_time" value="">
+                            <span id="dity-time-c" class="dity-time-c"> </span>
+                            <span class="dity-brand-logo">
+                                <a title="百雀羚" href="http://search.lefeng.com/search/showresult?keyword=%E7%99%BE%E9%9B%80%E7%BE%9A">
+                                    <img src="http://a.vpimg3.com/upload/brandcool/0/2016/04/05/66/a2e2a9ef-728e-4482-9865-472429455f24.png">
+                                </a>
+                            </span>
+                        </dd>
+                        <!-- <dd>
+                            <h1>
+                                <i></i>百雀羚百雀羚【控油去尘垢】三生花控油清肌净肤泥膜50g 补水面膜                   
+                            </h1>
+                            <p>轻盈泥膜细润涂抹于每一寸肌肤，清爽细腻毛孔，肌肤享受舒爽的感觉。</p>
+                        </dd>
+                        <dt>
+                            <div class="dity-pic">
+                                <img src="http://a.vpimg2.com/upload/merchandise/pdcvis/611579/2018/0716/175/fbbb91f6-ba81-4a59-844d-feeee8dec864.jpg">
+                                <div class="dity-tags">
+                                    <span>补水</span>
+                                    <span>亮肤</span>
+                                    <span>保湿</span>
+                                </div>
+                                <div class="dity-share">
+                                    <div class="share">
+                                        <span>
+                                            <b class="share_b1"></b><b class="share_b2"></b>
+                                            <a class="sina" title="分享到新浪微博" href=""></a>
+                                            <a class="qqt" title="分享到腾讯微博" href=""></a>
+                                            <a class="qqz" title="分享到QQ空间" href=""></a>
+                                            <a class="weixin" title="分享到微信" href=""></a>
+                                        </span>
+                                        <i></i><b style="font-weight:noraml;font-size:12px;">分享到</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dity">
+                                <div class="dity-cont">
+                                    <input id="dity_time" type="hidden" value="1553958000">
+                                    <div class="dity-price-c ">
+                                        <span class="dity-title">价格</span>
+                                        <span>
+                                            <b class="lighten">¥</b>
+                                            <strong>68.0</strong>
+                                            <b class="dity-countdown">6.0折</b>
+                                            <b class="marketPrice-s">¥ 113.0</b>
+                                        </span>
+                                    </div>
+                                     1：买赠 2：满减 3：折扣 4：免邮 from vip wiki
+                                        <div class="dity-promotions">
+                                        <span class="dity-title">优惠</span>
+                                        <div class="dity-prts">
+                                            <div class="dity-promotion">
+                                                <i class="l4" title="免邮"></i>全场满99元包邮                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dity-sendTime"></div>
+                                    <div class="dity-size clearfloat">
+                                        <ol>
+                                            <li class="dity-size-l">购买数量</li>
+                                            <li class="dity-size-r">
+                                                <span class="dity-m" id="dity-m"></span>
+                                                <input type="text" value="1" id="dity-input" class="dity-input" maxlength="2" >
+                                                <span class="dity-p" id="dity-p"></span>
+                                            </li>
+                                            <li class="dity-size-x"><b id="buyNum_tip"></b></li>
+                                        </ol>
+                                    </div>
+                                    <a id="qianggou" href="javascript:;" class="joinCar ldb1">
+                                        <b class="add-to-cart-pro ">加入购物车</b>
+                                    </a>
+                                    <span class="pollen-text" title="花粉可在乐蜂APP抵现金使用哦">购买最多可获得<b>34个</b>花粉</span>
+                                </div>
+                            </div>
+                        </dt> -->
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="main-left" style="padding-top: 50px;">
+                    <div class="detail-nav detail-nav-sie detailNav" id="detail-nav" style="position: absolute; top: 792px;">
+                        <span>
+                            <strong>￥68.0</strong>
+                            <b>￥113.0</b>
+                            <a href="javascript:;" class="joinCar2 addbtn" id="joinShopping">加入购物车</a>
+                        </span>
+                        <a href="#detail" class="down1 det" tag="tabc">商品详情</a>
+                        <a href="#f-service" tag="lfcn" class="prom">乐蜂承诺</a>
+                        <div class="tip3" style="display: none;">
+                            <p class="tip_mes_box"></p>
+                            <dl>
+                                <dt>
+                                    <img width="90" height="114" src="">
+                                </dt>
+                                <dd class="smallIntro">
+                                    <!-- 韩束面膜小灯泡 所有肤质 美白 火棘焕白面贴膜20片&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                    <!-- <p> --><!-- <del>¥199.0</del><div><i>¥</i>109.0</div></p> --></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="detail-top" id="detail"><img width="730" height="310" src="http://h5rsc.vipstatic.com/lefeng_pc/images/page/insurance.jpg"></div>
+                    <!-- 商品详情 s -->
+                    <div class="detail">
+                        <table class="detail-info-table">
+                            <tbody>
+                                <tr>
+                                    <td class="title">商品品牌:</td>
+                                    <td>百雀羚</td>
+                                </tr> 
+                                                <tr>
+                                    <td class="title">商品名称:</td>
+                                    <td>百雀羚【控油去尘垢】三生花控油清肌净肤泥膜50g 补水面膜</td>
+                                </tr> 
+                                                <tr>
+                                    <td class="title">备注:</td>
+                                    <td>包装：外盒有塑封（具体以收到的实物包装为准）</td>
+                                </tr> 
+                                                <tr>
+                                    <td class="title">有效期:</td>
+                                    <td>2020年（具体以收到的实物为准）</td>
+                                </tr> 
+                                                <tr>
+                                    <td class="title">规格:</td>
+                                    <td>50g</td>
+                                </tr> 
+                                                <tr>
+                                    <td class="title">特点描述:</td>
+                                    <td>补水,亮肤,保湿</td>
+                                </tr> 
+                                                <tr>
+                                    <td class="title">产地:</td>
+                                    <td>中国上海/江苏</td>
+                                </tr> 
+                                                <tr>
+                                    <td class="title">货号:</td>
+                                    <td>BQL2016052801</td>
+                                </tr> 
+                                            </tbody>
+                        </table>
+
+                        <div class="cont tabc">
+                                    <p>
+                                        <img src="http://a.vpimg2.com/upload/merchandise/pdcvis/611579/2018/1203/167/3c273a3a-0f35-48dd-ad8e-260e4e78e05f.jpg">
+                                    </p>
+                        </div>
+                    </div>
+                    <!--商品详情 e
+                    <!--乐蜂承诺 s-->
+                    <div class="f-service" id="f-service">
+                        <h4 class="t-lfcn">&nbsp;</h4>
+                        <ul>
+                            <li cimg="f-service-img1.jpg" class="h"> <b class="f-s-img-1"></b></li>
+                            <li cimg="f-service-img2.jpg"> <b class="f-s-img-2"></b></li>
+                            <li cimg="f-service-img3.jpg"> <b class="f-s-img-3"></b></li>
+                            <li cimg="f-service-img7.jpg"> <b class="f-s-img-4"></b></li>
+                            <li cimg="f-service-img9.jpg"> <b class="f-s-img-5"></b></li>
+                        </ul>
+                        <div class="f-service-con"><img alt="" src="http://h5rsc.vipstatic.com/lefeng_pc/images/page/f-service-img1.jpg"></div>
+                    </div>
+                    <!--乐蜂承诺 e-->
+                </div>
+                <div class="main-right">
+                    <div class="sidebar"><h3><i></i>浏览该商品的用户也购买了</h3><div id="cy"><dl><dt><a href="http://product.lefeng.com/product/490995800133833.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/107028/2018/1206/49/8d897716-9c1e-4cb9-8f07-232c50758d8b_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/490995800133833.html?brandId=800146436&amp;biid=tj_prod_klm">【竹炭控油】高夫 竹·炭净源控油护肤礼盒 清爽控油套装 均码</a></dd><dd class="pri"><span><b>￥</b>61</span><del class="fr mark_price">￥111</del></dd></dl><dl><dt><a href="http://product.lefeng.com/product/522536599139923.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/600300/2018/1206/185/40cf64b4-d495-4aa3-bc4e-8345e8e284e7_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/522536599139923.html?brandId=800146436&amp;biid=tj_prod_klm">保湿平价大容量 所有肤质 洁面 巨补水墨菊保湿洁面乳70ml</a></dd><dd class="pri"><span><b>￥</b>39</span><del class="fr mark_price">￥70</del></dd></dl><dl><dt><a href="http://product.lefeng.com/product/518193104619456.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/2018/11/14/121/ff094f87-e065-4d0a-b0d0-a7cffc889d19_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/518193104619456.html?brandId=800146436&amp;biid=tj_prod_klm">美肤宝美白小玉瓶珍藏特惠套装</a></dd><dd class="pri"><span><b>￥</b>289</span><del class="fr mark_price">￥499</del></dd></dl><dl><dt><a href="http://product.lefeng.com/product/508433497466712.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/600117/2018/1018/60/b3f9cf01-e3c7-4ede-ae6b-34609695f28a_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/508433497466712.html?brandId=800146436&amp;biid=tj_prod_klm">小蜜坊Manuka Bee秋天画廊哑光口红三支装1#（1210/1314/1510） （1111火焰橙+1314中国红+1510裸米色）</a></dd><dd class="pri"><span><b>￥</b>176</span><del class="fr mark_price">￥357</del></dd></dl><dl><dt><a href="http://product.lefeng.com/product/521262020478493.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/102397/2018/0630/134/96c996a4-a264-496b-b575-9aec85a74510_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/521262020478493.html?brandId=800146436&amp;biid=tj_prod_klm">Candy Moyo 持久型指甲油 23色可选 8ml</a></dd><dd class="pri"><span><b>￥</b>29</span><del class="fr mark_price">￥96</del></dd></dl><dl><dt><a href="http://product.lefeng.com/product/519815169857238.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/108846/2018/1019/29/3c61b92d-e85a-4589-8450-d002af4b8327_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/519815169857238.html?brandId=800146436&amp;biid=tj_prod_klm">玻儿笑脸圆圆剪 圆头设计 不伤皮肤 美容剪 见实物</a></dd><dd class="pri"><span><b>￥</b>17</span><del class="fr mark_price">￥59</del></dd></dl><dl><dt><a href="http://product.lefeng.com/product/512739863061725.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/603095/2019/0128/161/8c4d2a17-52d0-4333-bcd2-fdca0e7eb387_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/512739863061725.html?brandId=800146436&amp;biid=tj_prod_klm">【打造紧实小V脸 】原泥动力 火山暖泥套盒 提拉紧致 其它颜色</a></dd><dd class="pri"><span><b>￥</b>228</span><del class="fr mark_price">￥658</del></dd></dl><dl><dt><a href="http://product.lefeng.com/product/520056786498975.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/112350/2018/1226/47/e062b067-8600-45cf-bdcb-9279ce5e1a0a_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/520056786498975.html?brandId=800146436&amp;biid=tj_prod_klm">【清洁不紧绷】春纪 大葡萄补水保湿洁面乳 80g 温和洗面奶</a></dd><dd class="pri"><span><b>￥</b>39</span><del class="fr mark_price">￥59</del></dd></dl><dl><dt><a href="http://product.lefeng.com/product/518446482118530.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/607549/2018/1015/24/52caec7b-12ca-46d0-bd42-a8d1455cbbbd_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/518446482118530.html?brandId=800146436&amp;biid=tj_prod_klm">薇欧薇VOV保湿修颜霜 50ml BB霜 遮瑕补水 裸妆 自然色2#</a></dd><dd class="pri"><span><b>￥</b>128</span><del class="fr mark_price">￥188</del></dd></dl><dl><dt><a href="http://product.lefeng.com/product/518478110044675.html?brandId=800146436&amp;biid=tj_prod_klm" title="" target="_blank"><img src="http://a2.vimage1.com/upload/merchandise/pdcvis/605142/2018/1220/142/f11e9f8b-d581-412a-aa9e-445aa544c262_5t.jpg"></a></dt><dd class="nam"><a target="_blank" href="http://product.lefeng.com/product/518478110044675.html?brandId=800146436&amp;biid=tj_prod_klm">【眼袋救星】金稻导入美容仪KD9050B 精华导入仪 美容仪 白色</a></dd><dd class="pri"><span><b>￥</b>49</span><del class="fr mark_price">￥168</del></dd></dl></div></div>
+                </div>
+            </div>
+        </div>
+        <div id="toTop"><i></i></div>
+        <!--加入购物车成功-->
+        <div class="alt-succ" id="addsuccess" style="display: none;">
+            <div class="sum">
+                <!-- <h3>该商品已成功放入购物车</h3>
+                <p>购物车共 <b></b> 件商品&nbsp;&nbsp;合计：<b>386</b> 元</p>
+                <p><a class="pay" href="http://shopping.lefeng.com/showCart">去结算</a><a href="javascript:;">&lt;&lt;继续购物</a></p>
+                <span class="succ-ico"></span> -->
+            </div>
+            <a class="succ-close" href="javascript:;">关闭</a>
+        </div>
+        <div class="Cfooter">
+            <div class="container">
+                <div class="Cfooter_service">
+                    <ul class="w1000">
+                        <li class="li01" onclick="window.open('http://www.lefeng.com/notice/205.html')">
+                            <br>
+                        </li>
+                        <!--免运费-->
+                        <li class="li02" onclick="window.open('http://www.lefeng.com/notice/205.html')">
+                            <br>
+                        </li>
+                        <!--全正品-->
+                        <li class="li03" onclick="window.open('http://www.lefeng.com/notice/205.html')">
+                            <br>
+                        </li>
+                        <!--最放心-->
+                    </ul>
+                </div>
+                <div class="Cfooter-info">
+                    <dl class="w1000">
+                        <dt>
+                            <strong></strong><em>客服 9:00-24:00</em> 
+                        </dt>
+                        <dd>
+                            <strong>新手指南</strong> <a target="_blank" href="http://www.lefeng.com/help/55.html">购物流程</a> <a target="_blank" href="http://www.lefeng.com/help/62.html">优惠券规则</a> <a target="_blank" href="http://www.lefeng.com/help/73.html">联系客服</a> <a target="_blank" href="http://www.lefeng.com/help/56.html">常见问题</a> 
+                        </dd>
+                        <dd>
+                            <strong>付款方式</strong> <a target="_blank" href="http://www.lefeng.com/help/58.html">在线支付</a> <a target="_blank" href="http://www.lefeng.com/help/60.html">货到付款</a> <a target="_blank" href="http://www.lefeng.com/help/61.html">钱包支付</a> 
+                        </dd>
+                        <dd>
+                            <strong>配送服务</strong> <a target="_blank" href="http://www.lefeng.com/help/64.html">配送时效及运费</a> <a target="_blank" href="http://www.lefeng.com/help/65.html">验货与签收</a> 
+                        </dd>
+                        <dd>
+                            <strong>售后服务</strong> <a target="_blank" href="http://www.lefeng.com/help/70.html">退货政策</a> <a target="_blank" href="http://www.lefeng.com/help/71.html">退货流程</a> <a target="_blank" href="http://www.lefeng.com/help/72.html">退款方式及时效</a> 
+                        </dd>
+                        <dd class="f-sao1">
+                            <strong>乐蜂网微信</strong><b></b> 
+                        </dd>
+                    </dl>
+                </div>
+                <div class="Cfooter-cr">
+                    <div class="Cfooter-cr-a"><a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/76.html">关于乐蜂</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/77.html">免责声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/78.html">隐私声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/79.html">版权声明</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/zhaopin.html">招聘信息</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/73.html">联系我们</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/help/helpCenter.html">帮助中心</a> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/80.html">友情链接</a> 
+                    </div> 
+                    <span>Copyright <b>©</b> 2008-2016 Lefeng.com All Rights Reserved.</span> 
+                    <span>天津品简电子商务有限公司</span> <a target="_blank" href="http://www.miibeian.gov.cn/?biid=7520">津ICP备15005555号-1</a>&nbsp;&nbsp;<img style="display: inline-block; width: 15px; height: 15px; padding-right: 2px;" original="http://h5rsc.vipstatic.com/lefeng_pc/images/beian.png" src="http://h5rsc.vipstatic.com/lefeng_pc/images/beian.png"><span>京公网安备11010502034938号</span> <a rel="nofollow" target="_blank" href="http://www.lefeng.com/notice/242.html">营业执照</a>
+                    <div class="Cfooter-cr-info"> 
+                        <span>公司全称：天津品简电子商务有限公司  </span> &nbsp; &nbsp; <span>  公司固话：400 000 1818   </span> &nbsp; &nbsp; <span>   公司地址：天津市武清区京津电子商务产业园宏瑞道18号</span> </div>
+                    <div class="Cfooter-cr-img"> 
+                        <a id="___szfw_logo___" class="cxwz" rel="nofollow" target="_blank" href="https://search.szfw.org/cert/l/CX20120918001688001713"></a> 
+                        <a class="kxwz" rel="nofollow" target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e15011931011457422bp2j000000&amp;ct=df&amp;a=1&amp;pa=0.1418370669707656"></a> 
+                        <a class="pjzxlm" rel="nofollow" target="_blank" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1074823632"></a> <a class="itrust" rel="nofollow" target="_blank" href="http://www.315online.com.cn/member/315130044.html">中国互联网信用评价中心</a> 
+                        <a href="http://www.lefeng.com/notice/84.html" target="_blank" rel="nofollow" class="xfwq"></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
